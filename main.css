@@ -1,186 +1,192 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 body {
   margin: 0;
   padding: 0;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 body * {
   font-family: Noto Sans;
 }
 
-button.filled {
-  display: flex;
-  padding: 15px 30px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  border-radius: 35px;
-  color: #fff;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  cursor: pointer;
-  border: 3px solid #000;
-  background: #000;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
 }
 
-button.outlined {
-  display: flex;
-  padding: 15px 30px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  border-radius: 35px;
-  color: #fff;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  cursor: pointer;
-  border: 3px solid #fff;
-  background: transparent;
-}
-
-input.field {
-  display: flex;
+.hero-section {
   width: 100%;
-  box-sizing: border-box;
-  padding: 20px 30px;
+  background: #010625;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 10px;
-  border-radius: 50px;
-  border: 2px solid #393939;
-  background: none;
-  outline: none;
-  color: #afafaf;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
 }
-
-a.link {
-  color: #73a1c6;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  text-decoration: none;
-}
-
-main {
-  width: 70%;
-  height: 100%;
-}
-main .form-conteiner {
-  width: 100%;
-  height: 100%;
+.hero-section .section-content {
+  width: 80%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
-main .form-conteiner .background {
-  background: url(./assets/bg-1.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-main .form-conteiner .background article {
+.hero-section .section-content article {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 80px;
+  gap: 25px;
 }
-main .form-conteiner .background article h1 {
+.hero-section .section-content article h1,
+.hero-section .section-content article p {
   margin: 0;
+}
+.hero-section .section-content article h1 {
   color: #fff;
-  font-size: 48px;
+  font-family: Noto Sans;
+  font-size: 88px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 800;
   line-height: normal;
 }
-main .form-conteiner .background article a {
-  text-decoration: none;
+.hero-section .section-content article h1 .lightblue {
+  color: #48cbd3;
 }
-main .form-conteiner .form {
-  background: linear-gradient(123deg, #daebff 30.17%, #dae0ff 80.42%);
+.hero-section .section-content article p {
+  width: 70%;
+  color: #fff;
+  font-family: Noto Sans;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+}
+.hero-section .section-content article button {
   display: flex;
+  height: 55px;
+  padding: 15px 50px;
   justify-content: center;
   align-items: center;
-}
-main .form-conteiner .form form {
-  width: 420px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-main .form-conteiner .form form h2 {
-  margin: 0;
-  color: #393939;
-  font-size: 48px;
+  gap: 10px;
+  border-radius: 35px;
+  border: 3px solid #000;
+  background: #fff;
+  color: #010625;
+  font-family: Noto Sans;
+  font-size: 24px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 700;
   line-height: normal;
-  width: 100%;
-  margin-bottom: 80px;
+  cursor: pointer;
+  width: -moz-max-content;
+  width: max-content;
 }
-main .form-conteiner .form form .inputs-wrapper {
+.hero-section .section-content .images-wrapper {
+  width: 100%;
+  height: auto;
   display: flex;
-  width: 100%;
-  flex-direction: column;
-  gap: 35px;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 36px;
+  transform: translateX(10vw);
 }
-main .form-conteiner .form form .form-check {
+.hero-section .section-content img {
+  margin-top: 70px;
+}
+.hero-section .section-content .steps {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 23px;
+  margin: 0 200px;
+  transform: translateY(-5vw);
+}
+.hero-section .section-content .steps h3 {
+  color: #fff;
+  font-family: Noto Sans;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+}
+.hero-section .section-content .steps h3 .lightblue {
+  color: #48cbd3;
+}
+.hero-section .section-content .steps .rectangle {
+  width: 96px;
+  height: 8px;
+  background: #fff;
+}
+.hero-section .section-content .steps .steps-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+}
+.hero-section .section-content .steps .steps-info h2 {
+  color: #fff;
+  font-family: Noto Sans;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 32px;
+}
+.hero-section .section-content .steps .steps-info span {
+  color: #fff;
+  font-family: Noto Sans;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 32px;
+}
+
+.cards-wrapper {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.cards-wrapper .card {
   width: 100%;
+  background: linear-gradient(245deg, #48cbd3 -14.3%, rgba(118, 59, 194, 0) 103.82%);
+  border-radius: 50px;
+}
+.cards-wrapper .card .card-header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  margin-top: 20px;
-  margin-bottom: 40px;
+  gap: 10px;
+  margin: 5px 20px;
 }
-main .form-conteiner .form form span {
-  color: #393939;
-  font-size: 16px;
+.cards-wrapper .card .card-header .person-name {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.cards-wrapper .card .card-header .person-name h5 {
+  color: #fff;
+  font-family: Noto Sans;
+  font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  letter-spacing: 0.6px;
 }
-main .form-conteiner .form form a {
-  color: #73a1c6;
-  font-size: 16px;
+.cards-wrapper .card .card-header .person-name h6 {
+  color: #fff;
+  font-family: Noto Sans;
+  font-size: 13px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  text-decoration: none;
+  letter-spacing: 0.39px;
 }
-main .form-conteiner .form form .icons-link {
-  margin-top: 75px;
+.cards-wrapper .card span {
+  width: 90%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 25px;
-}
-main .form-conteiner .form form .icons-wrapper {
-  display: flex;
-  gap: 25px;
-}
-main .form-conteiner .form form .member {
-  margin-top: 75px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 15px;
-}
-main .form-conteiner .form form h5 {
-  color: #000;
-  font-size: 16px;
+  margin: 20px;
+  color: #fff;
+  font-family: Noto Sans;
+  font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  letter-spacing: 0.6px;
 }

@@ -1,50 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./main.css" />
-  </head>
-  <body>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./header.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h2 class="logo">Logo</h2>
+            <div class="buttons-container">
+                <nav>
+                    <a href="">About</a>
+                    <a href="">Contact Us</a>
+                    <a href="">Help</a>
+                </nav>
+                <a href="./signup.html"><button>Sign In</button></a>
+            </div>
+        </div>
+    </header>
     <main>
-      <div class="form-conteiner">
-        <div class="background">
-          <article>
-            <h1>Create Account</h1>
-            <a href="./signup.html"><button class="outlined">Sign Up</button></a>
-          </article>
-        </div>
-        <div class="form">
-          <form>
-            <h2>Log In</h2>
-            <div class="inputs-wrapper">
-              <input placeholder="Email" class="field" type="email" />
-              <input placeholder="Password" class="field" type="password" />
-            </div>
-            <div class="form-check">
-                <div>
-                <input type="checkbox"/>
-                <span>Remember me</span>
-            </div>
-                <a href="#">Forgot password?</a>
-            </div>
-              <button class="filled">Login</button>
-              <div class="icons-link">
-                <span>Or join with</span>
-                <div class="icons-wrapper">
-                  <a href="#"><img src="./assets/Google.svg" alt="Google"></a>
-                  <a href="#"><img src="./assets/Facebook.svg" alt="Facebook"></a>
-                  <a href="#"><img src="./assets/Twitter.svg" alt="Twitter"></a>
+        <section class="hero-section">
+            <div class="section-content">
+                <article class="text-wrapper">
+                    <h1>Present your </br> <span class="lightblue">business</span> to <span class="lightblue">any</span></br> community!</h1>
+                    <p>
+                      Ye business tool was made to allow any-sized business owner
+                      present his business quickly and effort-less.
+                    </p>
+                    <p>
+                      We suggesting flexible page setup, additional tools like mailing,
+                      customers notification, payments and many others features for any
+                      business.
+                    </p>
+                    <button>Discover</button>
+                </article>
+                <div class="images-wrapper">
+                    <img src="./assets/hero-1.svg" alt="hero-1">
+                    <img src="./assets/hero-2.svg" alt="hero-2">
                 </div>
-              </div>
-              <div class="member">
-                <h5>Not a member yet? </h5>
-                <a href="#">Sign up!</a>
-              </div>
-          </form>
-        </div>
-      </div>
+                <img src="./assets/city.svg" alt="city-img">
+                 <div class="steps"> 
+                <h3>There are only <span class="lightblue">3 steps to start</span></h3>
+                    <div class="rectangle"></div>
+                    <div class="steps-info">
+                        <h2>01</h2>
+                        <span>Create your business account by passing registration processes</span>
+                    </div>
+                    <div class="steps-info">
+                        <h2>02</h2>
+                        <span>Set up your page with detailed description of your business and custom design</span>
+                    </div>
+                    <div class="steps-info">
+                        <h2>03</h2>
+                        <span>Share your business page with the world and link your clients</span>
+                    </div>
+                </div> 
+            </div>
+                <div class="cards-wrapper">
+                    <div class="card">
+                        <div class="card-header">
+                            <img src="./assets/person-1.svg" alt="person-1">
+                            <div class="person-name">
+                                <h5>Pedro Fabia</h5>
+                                <h6>Barber</h6>
+                            </div>
+                        </div>
+                        <span class="text">I have always dreamed of seeing the Adriatic coast and this tour exceeded all my expectations. Visiting mountain lakes and beach areas was an unparalleled experience. </span>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <img src="./assets/person-2.svg" alt="person-2">
+                            <div class="person-name">
+                                <h5>Alex Pearson</h5>
+                                <h6>Web developer</h6>
+                            </div>
+                        </div>
+                        <span>I have always dreamed of seeing the Adriatic coast and this tour exceeded all my expectations. Visiting mountain lakes and beach areas was an unparalleled experience. </span>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <img src="./assets/person-3.svg" alt="person-3">
+                            <div class="person-name">
+                                <h5>John Brown</h5>
+                                <h6>Boxing trainer</h6>
+                            </div>
+                        </div>
+                        <span>I have always dreamed of seeing the Adriatic coast and this tour exceeded all my expectations. Visiting mountain lakes and beach areas was an unparalleled experience. </span>
+                    </div>
+                </div> 
+        </section>
     </main>
-  </body>
+    <footer></footer>
+</body>
 </html>
