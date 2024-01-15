@@ -42,7 +42,7 @@ h6 {
       }
 
       h1 {
-        color: #fff;
+        color: rules.$white;
         font-family: Noto Sans;
         font-size: 88px;
         font-style: normal;
@@ -56,7 +56,7 @@ h6 {
 
       p {
         width: 70%;
-        color: #fff;
+        color: rules.$white;
         font-family: Noto Sans;
         font-size: 24px;
         font-style: normal;
@@ -94,7 +94,7 @@ h6 {
       transform: translateY(-5vw);
 
       h3 {
-        color: #fff;
+        color: rules.$white;
         font-family: Noto Sans;
         font-size: 30px;
         font-style: normal;
@@ -109,7 +109,7 @@ h6 {
       .rectangle {
         width: 96px;
         height: 8px;
-        background: #fff;
+        background: rules.$white;
       }
 
       .steps-info {
@@ -119,7 +119,7 @@ h6 {
         gap: 16px;
 
         h2 {
-          color: #fff;
+          color: rules.$white;
           font-family: Noto Sans;
           font-size: 32px;
           font-style: normal;
@@ -128,7 +128,7 @@ h6 {
         }
 
         span {
-          color: #fff;
+          color: rules.$white;
           font-family: Noto Sans;
           font-size: 24px;
           font-style: normal;
@@ -145,6 +145,7 @@ h6 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
+  margin-bottom: 70px;
 
   .card {
     width: 100%;
@@ -163,7 +164,7 @@ h6 {
         gap: 5px;
 
         h5 {
-          color: #fff;
+          color: rules.$white;
           font-family: Noto Sans;
           font-size: 20px;
           font-style: normal;
@@ -173,7 +174,7 @@ h6 {
         }
 
         h6 {
-          color: #fff;
+          color: rules.$white;
           font-family: Noto Sans;
           font-size: 13px;
           font-style: normal;
@@ -188,7 +189,7 @@ h6 {
       width: 90%;
       display: flex;
       margin: 20px;
-      color: #fff;
+      color: rules.$white;
       font-family: Noto Sans;
       font-size: 20px;
       font-style: normal;
@@ -197,4 +198,75 @@ h6 {
       letter-spacing: 0.6px;
     }
   }
+}
+.business-section {
+  width: 100%;
+  background: rules.$white;
+  padding-top: 80px;
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .business-wrapper {
+    width: 80%;
+    display: flex;
+    align-items: center;
+
+    .business-text {
+      width: 60%;
+      display: flex;
+      flex-direction: column;
+      gap: 80px;
+
+      h2 {
+        color: rules.$darkblue;
+        font-family: Noto Sans;
+        font-size: 70px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+      }
+
+      form {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+
+        input {
+          @include rules.input;
+          width: 450px;
+        }
+
+        button {
+          @include rules.button;
+          background: rules.$darkblue;
+          color: rules.$white;
+          box-sizing: border-box;
+          width: 180px;
+          height: 79px;
+        }
+      }
+    }
+
+    .image-wrapper {
+      width: 40%;
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
+.text-marquee {
+  width: 100%;
+  height: 110px;
+  background: rules.$darkblue;
+  display: flex;
+  align-items: center;
+  color: rgba(161, 161, 161, 0.74);
+  font-family: Noto Sans;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }
