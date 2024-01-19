@@ -1,0 +1,41 @@
+@use "rules";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.footer-section {
+  width: 100%;
+  background: rules.$darkblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .footer-wrapper {
+    width: 80%;
+    height: 250px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    color: rules.$white;
+
+    .footer-links {
+      display: flex;
+      gap: 50px;
+
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        a {
+          @include rules.link;
+        }
+      }
+    }
+  }
+  span {
+    font-family: "Noto Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}

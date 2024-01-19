@@ -57,3 +57,27 @@ header .header-content .buttons-container button {
   line-height: normal;
   cursor: pointer;
 }
+
+@media (max-width: 1000px) {
+  header .header-content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+  header .header-content .buttons-container {
+    width: 100%;
+    gap: 10px;
+    justify-content: space-between;
+  }
+  header .header-content .buttons-container nav {
+    width: auto;
+    gap: 30px;
+  }
+  header .header-content .buttons-container button {
+    width: -moz-max-content;
+    width: max-content;
+    font-size: 20px;
+    padding: 15px 30px;
+  }
+}

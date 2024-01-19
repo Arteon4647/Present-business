@@ -4,6 +4,7 @@
 body {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 
   * {
     font-family: Noto Sans;
@@ -81,7 +82,9 @@ h6 {
     }
 
     img {
-      margin-top: 70px;
+      width: 20vw;
+      height: 665px;
+      object-fit: cover;
     }
 
     .steps {
@@ -269,4 +272,134 @@ h6 {
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+}
+
+.bottom-business-section {
+  width: 100%;
+  background: rules.$white;
+  padding-top: 80px;
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .bottom-business-wrapper {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .bottom-business-text {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 100px;
+      align-items: center;
+
+      form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 35px;
+
+        input {
+          @include rules.input;
+          width: 450px;
+        }
+
+        .message {
+          height: 160px;
+        }
+
+        button {
+          @include rules.button;
+          background: rules.$darkblue;
+          color: rules.$white;
+          box-sizing: border-box;
+          width: 280px;
+          height: 79px;
+        }
+      }
+
+      h2 {
+        color: rules.$darkblue;
+        font-family: Noto Sans;
+        font-size: 70px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+      }
+    }
+  }
+}
+
+@media (max-width: rules.$tablet) {
+  .hero-section {
+    .section-content {
+      margin-top: 50px;
+      grid-template-columns: 1fr;
+
+      article {
+        text-align: center;
+        align-items: center;
+
+        h1 {
+          font-size: 50px;
+        }
+
+        p {
+          font-size: 20px;
+          width: 100%;
+        }
+      }
+
+      .images-wrapper {
+        transform: none;
+        margin-top: 50px;
+        justify-content: center;
+
+        img {
+          width: auto;
+          height: auto;
+          object-fit: none;
+        }
+      }
+
+      img {
+        padding: 50px;
+        width: auto;
+        height: auto;
+      }
+
+      .steps {
+        transform: none;
+        margin: 0;
+      }
+    }
+    .cards-wrapper {
+      padding: 50px;
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  .business-section {
+    .business-wrapper {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+    }
+  }
+
+  .bottom-business-section {
+    .bottom-business-wrapper {
+      .bottom-business-text {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
 }
